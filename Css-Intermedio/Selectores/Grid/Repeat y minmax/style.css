@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+/*
+La función repeat() en CSS Grid permite definir patrones de repetición en filas o columnas sin escribirlas manualmente una por una.*/
+/*
+La función minmax() en CSS Grid permite definir un tamaño mínimo y máximo para una fila o columna. Esto es útil para asegurarse de que los elementos sean responsivos y se ajusten al contenido disponible*/
+/*
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:300px 200px;
+}
+*/
+.grid{
+    height: 80vh;
+    display: grid;
+    grid-template-columns:repeat(4,minmax(100px,300px));
+    grid-template-rows:repeat(2,200px) 1fr;
+}
+/*fr --> fracciones del espacio disponible*/
+.grid-item{
+    background-color: #48e;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}

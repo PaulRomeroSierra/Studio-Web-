@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="..//Flexbox/img/logo.png">
+    <meta name="author" content="Paul Martin Romero Sierra">
+    <meta name="description" content="Esta pagina habla sobre las medidas para cargar imagenes dependiendo de la configuracion que tenga el dispositivo del usuario">
+    <meta name="keywords" content="imagenes, dispositivos, configuracion">
+    <title>Srcset_sizes</title>
+</head>
+<body>
+    <div>
+        <p>
+            El atributo srcset en HTML se utiliza en elementos de imagen (<img>) para especificar un conjunto de imágenes alternativas que el navegador puede usar en función de las características del dispositivo o del entorno (como la resolución de pantalla o el ancho de la ventana).</p>
+            <code>img src="dalto.png"
+                srcset="dalto-small.png 400w, dalto-medium.png 600w, dalto.png 1000w" sizes="(max-width: 400) 300px, (max-width: 600px) 500px,900px"</code>
+    </div>
+    <img src="dalto.png"
+    srcset="dalto-small.png 400w, dalto-medium.png 600w, dalto.png 1000w" sizes="(max-width: 400) 300px, (max-width: 600px) 500px,900px">
+    <p>
+Es especialmente útil para implementar imágenes responsivas, donde diferentes tamaños de imágenes se cargan según las necesidades del usuario, optimizando así el rendimiento de tu sitio web.
+<br><br>
+Estructura básica de srcset
+Desglose de atributos:
+src:
+<br><br>
+Especifica la imagen predeterminada que se cargará si el navegador no soporta srcset.
+srcset:
+<br><br>
+Define una lista de imágenes y el tamaño correspondiente que el navegador puede elegir.<br><br>
+Cada entrada tiene:
+URL de la imagen (por ejemplo, imagen-grande.jpg).
+Descriptor:
+w (ancho en píxeles): Indica el ancho de la imagen, como 1200w.
+x (densidad de píxeles): Indica la densidad de la imagen, como 2x.
+sizes:
+<br><br>
+Especifica cómo debe usarse el espacio disponible (normalmente en relación al ancho de la ventana).
+Por ejemplo, (max-width: 600px) 400px significa que, si el ancho de la ventana es menor a 600px, la imagen será renderizada con un ancho de 400px.
+    </p>
+</body>
+</html>

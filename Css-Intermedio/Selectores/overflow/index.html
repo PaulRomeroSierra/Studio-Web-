@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Overflow</title>
+</head>
+
+<body>
+
+    <div class="text">
+        <h2>Overflow</h2>
+        <p>La propiedad overflow en CSS se utiliza para controlar qué ocurre cuando el contenido de un elemento supera
+            las dimensiones de su contenedor.</p>
+        <p>Visible (por defecto):
+            El contenido que desborda no se recorta y será visible fuera del contenedor.
+            Ejemplo: Ideal cuando no quieres limitar el contenido visible.</p>
+        <div class="box box--1">
+            <h2>Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque, ullam omnis, minus amet, vel
+                fuga
+                aliquam hic quo possimus alias! Expedita commodi ex mollitia aut voluptatibus eius facilis repudiandae
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti cupiditate labore, laborum
+                aliquam
+                ut est deserunt excepturi hic alias nihil aut quibusdam ipsam laudantium minima inventore odio nulla
+                veniam.
+            </p>
+        </div>
+        <p>
+            Hidden:
+            El contenido que desborda se recorta y no es visible.
+            Ejemplo: Útil cuando quieres mantener el diseño limpio sin barras de desplazamiento
+        </p>
+        <div class="box box--2">
+            <h2>Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque, ullam omnis, minus amet, vel
+                fuga
+                aliquam hic quo possimus alias! Expedita commodi ex mollitia aut voluptatibus eius facilis repudiandae
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti cupiditate labore, laborum
+                aliquam
+                ut est deserunt excepturi hic alias nihil aut quibusdam ipsam laudantium minima inventore odio nulla
+                veniam.
+            </p>
+        </div>
+        <p>
+            Scroll:
+            Siempre muestra barras de desplazamiento, tanto horizontal como vertical, incluso si no son necesarias.
+            Ejemplo: Bueno para garantizar que el contenido siempre sea accesible mediante el desplazamiento.
+        </p>
+        <div class="box box--3">
+            <h2>Box</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque, ullam omnis, minus amet, vel
+                fuga
+                aliquam hic quo possimus alias! Expedita commodi ex mollitia aut voluptatibus eius facilis repudiandae
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti cupiditate labore, laborum
+                aliquam
+                ut est deserunt excepturi hic alias nihil aut quibusdam ipsam laudantium minima inventore odio nulla
+                veniam.
+            </p>
+        </div>
+    </div>
+    <p>Auto:
+        Muestra barras de desplazamiento solo si el contenido desborda el contenedor.
+        Ejemplo: Comúnmente usado porque se adapta dinámicamente al contenido.</p>
+    <div class="box box--4">
+        <h2>Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque, ullam omnis, minus amet, vel fuga
+            aliquam hic quo possimus alias! Expedita commodi ex mollitia aut voluptatibus eius facilis repudiandae
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos deleniti cupiditate labore, laborum aliquam
+            ut est deserunt excepturi hic alias nihil aut quibusdam ipsam laudantium minima inventore odio nulla veniam.
+        </p>
+    </div>
+</body>
+
+</html>

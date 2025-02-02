@@ -1,0 +1,73 @@
+:root{
+    --body--color:#1a1a2e ;
+    --text--main--color:#eaeaea;
+    --background--card--color1:#16213e;
+    --background--card--color2:#0f3460;
+    --main--buttom--color:#e94560;
+    --hover--buttom--color:#ff6f91;
+}
+body{
+    margin:25px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: var(--text--main--color);
+    background-color: var(--body--color);
+}
+.box{
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    border: 2px solid var(--text--main--color);
+    background-image: url('img/Pareja.jpg'), url('img/Playa.jpg');
+    background-size:contain ;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 0 var(--text--main--color);
+  
+}
+.Opacity{
+    height: 100%;
+    background:linear-gradient(#16213f,#0003, #0f346f);
+    border-radius: 12px;
+}
+p{
+    text-align: justify;
+    font-size: 0.9em;
+    padding: 15px;
+    padding-top: 70px;
+    font-style:italic;
+}
+h2{
+    margin: 0;
+    padding:20px;
+    color: yellow;
+    font-style: oblique;
+    font-size: 2em;
+}
+.bottom{
+    border-radius: 8px;
+}
+label{
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    margin:2px;
+}
+.formulario{
+    padding: 8px;
+}
+.formulario--bottom{
+    border-radius: 5px;
+    background-color: var(--main--buttom--color);
+    border: 1.5px solid var(--hover--buttom--color);
+    color: var(--text--main--color);
+    letter-spacing: 2px;
+}
+.formulario--bottom:hover{
+    background: linear-gradient(#e94560,#ff6f91);
+    border: 1.5px solid var(--hover--buttom--color);
+    font-size: 1em;
+}

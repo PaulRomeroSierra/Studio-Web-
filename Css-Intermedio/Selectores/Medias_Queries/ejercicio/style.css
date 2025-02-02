@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+div,body{
+    box-sizing: border-box;
+}
+/*
+@media print{
+    body{
+        font-size: 24pt;
+    }
+}
+*/
+/*
+@media screen and (max-width:500px){
+    body{
+        font-size: 50px;
+        background-color: #000;
+        color: #fff;
+    }
+}
+*/
+.flexbox{
+    display: flex;
+}
+.flex-item{
+    background-color: #ccc;
+    padding: 30px;
+    border: 1px solid #f00;
+    flex-grow:1;
+}
+@media screen and (max-width:480px){
+    .flexbox{
+        flex-direction: column;
+    }
+}

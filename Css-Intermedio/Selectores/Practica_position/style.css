@@ -1,0 +1,155 @@
+body{
+    margin :0;
+    font-family: sans-serif;
+    background-color:beige;
+}
+.box__relative{
+    width: 500px;
+    height: 200px;
+    background-color: gray;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0px 0px 8px 2px blue;
+}
+.relative{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin:0px;
+    position: relative;
+}
+.relative--1{
+    background-color: yellow;
+    left: 0px;
+    top: 0px;
+}
+.relative--2{
+    background-color: blue;
+    left:50px;
+    top: 0px;
+}
+.relative--3{
+    background-color:red;
+    left: 100px;
+    top: 0px;
+}
+.relative--4{
+    background-color:yellow;
+    left: 150px;
+    top: 0px;
+}
+.relative--5{
+    background-color:blue;
+    left: 200px;
+    top: -50px;
+}
+.relative--6{
+    background-color:red;
+    left: 250px;
+    top: -100px;
+}
+.relative--7{
+    background-color:yellow;
+    left: 300px;
+    top: -150px;
+}
+.relative--8{
+    background-color:blue;
+    left: 350px;
+    top: -250px;
+}
+.relative--9{
+    background-color:red;
+    left: 400px;
+    top: -350px;
+}
+.relative--10{
+    background-color:yellow;
+    left: 450px;
+    top: -450px;
+}
+.box__static{
+    width: 500px;
+    height: 200px;
+    background-color: gray;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 0px 0px 8px 2px blue;
+}
+/*Cuando se le da el valor static los elementos no se pueden mover como los elementos con la propiedad relative*/
+.static{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin:0px;
+    position: static;
+}
+.static--1{
+    background-color: yellow;
+    left: 0px;
+    top: 0px;
+}
+.static--2{
+    background-color: blue;
+    left:50px;
+    top: 0px;
+}
+.static--3{
+    background-color:red;
+    left: 100px;
+    top: 0px;
+}
+.static--4{
+    background-color:yellow;
+    left: 150px;
+    top: 0px;
+}
+.static--5{
+    background-color:blue;
+    left: 200px;
+    top: -50px;
+}
+.static--6{
+    background-color:red;
+    left: 250px;
+    top: -100px;
+}
+.static--7{
+    background-color:yellow;
+    left: 300px;
+    top: -150px;
+}
+.static--8{
+    background-color:blue;
+    left: 350px;
+    top: -250px;
+}
+.static--9{
+    background-color:red;
+    left: 400px;
+    top: -350px;
+}
+.static--10{
+    background-color:yellow;
+    left: 450px;
+    top: -450px;
+}
+
+
+dialog{
+    height: 50px;
+    width: 100px;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+.button{
+    position: absolute;
+    top: 0;
+    right: 0;
+}

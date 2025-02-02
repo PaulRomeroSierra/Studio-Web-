@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: aliceblue;
+}
+.menu{
+background:linear-gradient(aqua,blue);
+width: 100vw;
+height: 20vh;
+margin-top: 0;
+position: fixed;
+top: 0;
+text-align: center;
+box-shadow: 0px 0px 5px 1px gray;
+}
+.nav__item{
+    background-color:gray;
+    display: inline-block;
+    padding: 2px;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 5vh;
+}
+.nav__link{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+.nav__item:hover{
+    padding: 4px;
+    border:2px solid #fff;
+    color: yellow;
+}
+
+.link--search:active{
+    font-size: 18px;
+    color: aqua;
+}

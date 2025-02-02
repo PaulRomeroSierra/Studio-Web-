@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Icono.jpg">
+    <title>Transiciones</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Transiciones</h1>
+    </header>
+    <main class="main__content">
+        <section class="main__content content__text">
+        <p class="content__text text--1">
+            <span>Transition-property:</span> Especifica qué propiedades cambiarán gradualmente. Ejemplo: color, background-color, width, etc. También puedes usar all para afectar todas las propiedades animabless. <span>Pasa el cursor por encima para ver el efecto</span>
+        </p>
+        <p class="content__text text--2">
+            <span>Transition-duration:</span> Define cuánto tiempo durará la transición. Se especifica en segundos (s) o milisegundos (ms). Ejemplo: 0.5s.
+            <div>
+                <code>transition-property: color;
+                    transition-duration: 0.5s;
+                    transition-property: background;
+                    transition-duration: 0.5s;</code>
+            </div>
+        </p>
+        
+        <div class="box box--1">
+            box
+        </div>
+    </section>
+    <section class="main__content content__text">
+        <p class="content__text text--3">
+            <span>Transition-delay:</span> Establece cuánto tiempo esperar antes de comenzar la transición. Ejemplo: 1s.
+            <div>
+            <code>
+                transition-delay: 1s;
+            </code>
+        </div>
+        </p>
+        <div class="box box--2">
+            box
+        </div>
+    </section>
+    <section>
+        <p>
+            <span>Transition-timing-function:</span> Determina cómo será el ritmo de la transición. Los valores comunes son:
+        </p>
+        <ul>
+            <li><span>Ease</span> (por defecto): Inicia lenta, acelera y luego desacelera.</li>
+            <li><span>linear:</span> Velocidad constante.</li>
+            <li><span>Ease-in:</span> Comienza lenta.</li>
+            <li><span>Ease-out:</span> Termina lenta</li> 
+            <li><span>Ease-in-out:</span> Comienza y termina lenta.</li> 
+            <li>También puedes usar funciones personalizadas como cubic-bezier. <a href="https://cubic-bezier.com/#.17,.67,.83,.67" target="_blank" rel="noopener nofollow noferrer" >Cubic-bezier</a></li>
+        </ul>
+        <span>Saca el cursor de la pantalla para ver el efecto</span>
+        <div>
+        <code>transition-timing-function: ease-out;</code>
+    </div>
+        <div>
+            <code> transition-timing-function: cubic-bezier(.17,.67,.96,.15);</code>
+        </div>
+        <div class="box--timming"></div>
+    </section>
+    </main>
+    <footer></footer>
+</body>
+</html> 

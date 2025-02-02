@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Metodologia</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo titulo--diseño">Metodologia BEM</h1>
+        <h3 class="encabezado__definicion definicion--diseño">Block element modificier</h3>
+    </header>
+    <main class="Principal">
+        <section class="Principal__section">
+            <h4 class="Principal__section section--subtitulo">Block</h4>
+            <ul class="section__lista">
+                <li class="section__lista  lista--item1">Representa un componente independiente y reutilizable.</li>
+                <li class="section__lista lista--item2">Ejemplo: menu, button, form.</li>
+            </ul>
+        </section>
+        <section class="Principal__section">
+            <h4 class="Principal__section section--subtitulo ">Elemento</h4>
+            <ul class="section__lista">
+                <li class="section__lista lista--item1">Es una parte del bloque que no puede existir fuera de él.</li>
+                <li class="section__lista lista--item2">Se conecta al bloque con dos guiones bajos (__).</li>
+                <li class="section__lista lista--item3">Ejemplo: menu__item, button__icon.</li>
+            </ul>
+        </section>
+        <section class="Principal__section">
+            <h4 class="Principal__section section--subtitulo">Modifier</h4>
+            <ul class="section__lista"> 
+                <li class="section__lista lista--item1">Representa una variación o estado del bloque o del elemento.</li>
+                <li class="section__lista lista--item2">Se conecta al bloque o elemento con dos guiones (--).</li>
+                <li class="section__lista lista--item3">menu--vertical, button--disabled.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por:<a href="https://www.instagram.com/">Paul Romero</a>
+            <a href="">Sobre nosotros</a>
+            <a href="">Contactos</a>
+        </p>
+    </footer>
+</body>
+</html>

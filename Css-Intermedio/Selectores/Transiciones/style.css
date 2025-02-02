@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    /*A la caja que se va a transicionar se le da la propiedad de transition*/
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-property: background;
+    transition-duration: 0.5s;
+}
+.box:hover{
+    background-color: #a22;
+    color: #fff;
+}
+span{
+    font-weight: bolder;
+}
+.box--2{
+    background-color: blue;
+    transition-delay: 1s;
+}
+.box--timming{
+    background-color: #a22;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 0;
+    transition-property: left;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(.17,.67,.96,.15);
+}
+
+body:hover .box--timming{
+    left: 400px;
+}

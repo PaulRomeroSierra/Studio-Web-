@@ -1,0 +1,76 @@
+/*selecciona el elemento raíz de un árbol que representa el documento,tiene la mas alta especificidad*/
+:root{
+    --main--color: #189;
+}
+h1{
+    color: #f6e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+}
+/*Se activa cuando el usuario pasa el cursor sobre un elemento.*/
+h1:hover{
+    color: aqua;
+}
+/*Se activa cuando un elemento está siendo activado por el usuario, como cuando se hace clic en un botón.*/
+h1:active{
+    background-color: #f6e;
+    color: black;
+}
+/*Selecciona el primer hijo de un elemento contenedor.*/
+li:first-child{
+    color: aqua;
+}
+/*Selecciona el ultimo hijo de un elemento contenedor*/
+li:last-child{
+    color: red;
+}
+/*Selecciona el hijo en una posición específica dentro de su contenedor. Se puede usar con números, palabras clave (como odd o even), o una fórmula*/
+li:nth-child(3){
+    color: chocolate;
+}
+/*Para seleccionar un elemento si y otro no dependiendo del numero que acompañe a la n*/
+li:nth-child(2n){
+    color: yellow;
+}
+/*Similar a :nth-child(), pero selecciona el n-ésimo elemento de un tipo específico dentro de su contenedor.
+*/
+li:nth-of-type(2){
+    color: coral;
+}
+.lista li{
+    color: aqua;
+}
+/*Para seleccionar todos los elementos menos los especificados*/
+.lista li:not(.excluir){
+    color:var(--main--color)
+}
+/*Para seleccionar los elementos vacios*/
+div:empty{
+    background-color: black;
+    padding: 20px;
+}
+/*Selecciona los elementos de formulario que están marcados, como casillas de verificación (checkbox) o botones de opción (radio).*/
+input[type="checkbox"]:checked{
+    background-color: #f6e;
+    margin: 20px;
+}
+input[type="checkbox"]{
+    background-color: #f6e;
+    margin: 40px;
+}
+/*Enlace no visitados*/
+a:link{
+    color:red;
+}
+/*Para modificar las propiedades de los enlaces ya visitados*/
+a:visited{
+    color: green;
+}
+/*Seleccionando los inputos validos*/
+input:valid{
+    color:green;
+}
+/*Seleccionando input invalidados*/
+input:invalid{
+    color:red;
+}

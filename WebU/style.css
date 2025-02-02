@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.header{
+    background: url(img/U.jpg);
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.overlay{
+    background-color: #0009;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: absolute;
+}
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    margin-left: 100px;
+}
+h3{
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    left: 110px;
+    top: -10px;
+}
+.titulo{
+    position: relative;
+}
+.buttom{
+    position: absolute;
+    left: 120px;
+    bottom: 10px;
+    background-color: #11f;
+    color: white;
+    border: 2px solid #11f;
+    border-radius: 2px;
+    box-shadow: 0 0 0 0.5px #fff;
+    transition-property: background,border;
+    transition-duration: .2s;
+}
+.buttom:hover{
+    background-color: #115f;
+    border:2px solid #115f;
+}
+.nav__ul{
+    display: flex;
+    justify-content:space-evenly;
+    list-style: none;
+    background-color:#115f;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.li__link{
+    color: white;text-decoration: none;
+    margin: 20px;
+    flex-grow: 6;
+}
+.modal__container{
+    position: absolute;
+    right: 0;
+}
+dialog{
+    width: 150px;
+    height: 50px;
+    border: none;
+    box-shadow:0 0 9px 1px black;
+    background-color: #e20;
+    border-radius: 5px;
+    position: relative;
+}
+dialog:hover{
+    background-color: #d50;
+}
+.X{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px black;
+}
+.X:hover{
+    background-color: #f00;
+    color: #fff;
+}
+.X:focus{
+    background-color: #c20;
+    box-shadow: 0 0 1px 1px #fff;
+}
+p{
+    margin: 0;
+    border: none;
+    color: #fff;
+    text-align:start;
+    line-height: 1;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Flexbox</h2>
+        <p>
+            ¡Claro! Flexbox es un modelo de diseño en CSS que facilita la alineación, distribución y organización de
+            elementos dentro de un contenedor. Su nombre completo es Flexible Box Layout y está diseñado para manejar
+            diseños en una sola dimensión: ya sea en filas (horizontal) o en columnas (vertical).
+        </p>
+        <h2>¿Cómo funciona?</h2>
+        <p>
+            Para usar Flexbox, debes aplicar la propiedad display: flex a un contenedor. Esto convierte a los hijos
+            directos de ese contenedor en elementos flexibles.</p>
+        <code>.container {
+                display: flex;
+            }</code>
+        <h2>Propiedades principales</h2>
+        <p>
+            Flexbox tiene propiedades para el contenedor flex y para los elementos flexibles (hijos).</p>
+        <h3>Flex-direction</h3>
+        <p>
+            Define la dirección principal en la que se colocarán los elementos.
+            Valores:</p>
+        <ul>
+            <li>row (por defecto): Horizontal, de izquierda a derecha.</li>
+            <li>row-reverse: Horizontal, de derecha a izquierda.</li>
+            <li>column: Vertical, de arriba hacia abajo.</li>
+            <li>column-reverse: Vertical, de abajo hacia arriba.</li>
+        </ul>
+        <h3>Justify-content</h3>
+        <p>
+            Controla cómo se distribuyen los elementos en la línea principal.
+            Valores:</p>
+        <ul>
+            <li>flex-start (por defecto): Todos los elementos al inicio.</li>
+            <li>flex-end: Todos los elementos al final.</li>
+            <li>center: Elementos centrados.</li>
+            <li>space-between: Espacio igual entre los elementos.</li>
+            <li>space-around: Espacios iguales alrededor de cada elemento.</li>
+            <li>space-envenlly: Espacios iguales.</li>
+        </ul>
+        <h3>Align-items</h3>
+        <p>
+            Alinea los elementos en la línea transversal (perpendicular).
+            Valores:</p>
+        <ul>
+            <li>stretch (por defecto): Los elementos se estiran para llenar el contenedor.</li>
+            <li>flex-start: Alineados al inicio.</li>
+            <li>flex-end: Alineados al final.</li>
+            <li>center: Alineados en el centro.</li>
+            <li>baseline: Basado en la línea base del texto.</li>
+        </ul>
+        <h3>Aling-content</h3>
+        <p>Solo se aplica si hay múltiples líneas. Define cómo se distribuyen las líneas en el eje transversal.
+            Valores: Igual que los de align-items.</p>
+        <h3>Flex-wrap</h3>
+        <p>
+            Controla si los elementos se envuelven al desbordar el contenedor.
+            Valores:</p>
+            <ul>
+                <li>nowrap (por defecto): No se envuelven.</li>
+                <li>wrap: Los elementos se envuelven al siguiente renglón o columna.</li>
+                <li>wrap-reverse: Igual que wrap, pero en dirección inversa.
+                </li>
+            </ul>
+            <h3>Propiedades de los elementos flexibles (hijos)</h3>
+            <p>
+                Estas controlan cómo se comportan los elementos individuales dentro del contenedor.</p>
+                <h3>Flex</h3>
+                <p>
+                    Es un atajo para definir el crecimiento (flex-grow), encogimiento (flex-shrink) y tamaño base (flex-basis) del elemento. Ejemplo:</p>
+                    <h3>Align-self</h3>
+                    <p>
+                        Alinea un elemento individual en el eje transversal, ignorando align-items del contenedor.
+                        Valores: Igual que los de align-items.</p>
+    </div>
+</body>
+
+</html>

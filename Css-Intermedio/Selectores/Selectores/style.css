@@ -1,0 +1,47 @@
+body{
+    color: aqua;
+}
+
+/*Para seleccionar los atributos que terminen en un formato especifico*/
+img[src$=".jpg"]{
+    border: 2px solid #0008;
+    width: 100%;
+    box-shadow: 0 0 9px 2px black;
+    border-radius: 6px;
+}
+/*Para seleccionar los aributos de un formato especifico*/
+img[src="img/Caravan.jpg"]{
+    width: 20%;
+}
+/*Para seleccionar los atributos que empienzan en un formato especifico,circunflejo simbolo*/
+img[src^="img"]{
+    width: 100%;
+}
+/*Para seleccionar atributos que estan dentro de otro*/
+ul li{
+    color: red;
+}
+/*Para seleccionar los atributos de un hijo directo*/
+li > strong{
+    color: blue;
+}
+/*Para seleccionar atriutos que son hermanos adyacente*/
+h1 + p{
+    color: yellowgreen;
+}
+/*Para seleccionar aributos que son hermanos generales*/
+h1 ~ p{
+    color: blueviolet;
+}
+/*Para seleccionar multiples atributos*/
+h1, p{
+    color: chartreuse;
+}
+h1{
+    color: inherit;
+    /*Inherit siginifica que va a heredar la propiedad de la caja padre*/
+    color: initial;
+    /*initial significa que no va a heredar ninguna propiedad sino que tienen su valor inicial*/
+    color: revert;
+    /*revert significa que va heredar la propiedad sin el usuario eligio alguna como las extensiones de chrome y sino tiene lo vuelve al valor por defecto*/
+}

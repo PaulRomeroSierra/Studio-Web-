@@ -1,0 +1,26 @@
+/* Reglas para practicar especificidad */
+p {
+    color: blue;
+}
+
+.highlight {
+    color: green;
+}
+
+#intro {
+    color: red;
+}
+
+div .highlight {
+    color: orange;
+}
+
+h1.title {
+    font-size: 2em;
+    text-decoration: underline;
+    color: purple;
+}
+
+div p {
+    font-weight: bold;
+}

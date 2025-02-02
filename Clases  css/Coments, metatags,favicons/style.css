@@ -1,0 +1,51 @@
+:root {
+    --main--background--color:#E3F2FD;
+    --main--text--color: #1565C0;
+    --Highlight--color: #1E88E5;
+    --second--color: #0D47A1 ;
+    --outstanding--color: #BBDEFB;
+}
+
+body {
+    background-color: var(--main--background--color);
+    margin: 15px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box{
+    background-color:var(--outstanding--color);
+    margin: auto;
+    box-sizing: border-box;
+    max-width: 800px;
+    height: 90%;
+    text-align: center;
+    padding: 25px;
+    border-radius: 20px;
+
+}
+img{
+    width: 60%;
+    height: 50vh;
+    border-radius: 20px;
+}
+.encabezado {
+    color: var(--main--text--color);
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+}
+.encabezado_titulo {
+    padding: 30px;
+    font-size: 2.5em;
+    padding: none;
+    color: var(--main--background--color);
+    background-color: var(--second--color);
+    border-radius: 20px;
+}
+.encabezado_description{
+    color: var(--second--color);
+    font-style: italic;
+}
+.redes_sociales{
+    padding: 0px;
+    list-style: none;
+}

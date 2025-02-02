@@ -1,0 +1,74 @@
+:root{
+    --main--background:#f5f5f5;
+    --main--text:#333333;
+    --headers:#2c3e50;
+    --links:#2980b9;
+    --background--sections:#ffffff;
+    --border--sections:#bdc3c7;
+}
+body{
+    margin: 0 auto;
+    background-color: var(--main--background);
+    font-size: 16px;
+    font-family: sans-serif;
+    color: var(--main--text);
+    align-items: center;
+    text-align: justify;
+    
+}
+.encabezado{
+    background-color: var(--headers);
+    padding: 15px;
+    position:sticky;
+}
+.titulo--diseño{
+    color: burlywood;
+    font-weight: bold;
+}
+.definicion--diseño{
+    color: cadetblue;
+}
+.Principal__section{
+    background-color: var(--background--sections);
+    padding: 5px;
+    border: 2px solid var(--border--sections);
+    box-shadow: 0 0 5px 0 var(--links
+    );
+}
+.section--subtitulo:active{
+    background-color: #2c3e50;
+    color: var(--background--sections);
+    border-radius: 15px;
+    padding: 5px;
+}
+.section--subtitulo{
+    border: none;
+    font-size: 1.2em;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    box-shadow: none;
+    color: var(--main--text);
+    margin-bottom: 0px;
+}
+.section__lista{
+    list-style: square;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 4px;
+}
+.section__lista::marker{
+    color: rebeccapurple;
+}
+.lista--item1{
+    color: darkblue;
+}
+.lista--item2{
+    color:blue;
+}
+.lista--item3{
+    color: lightseagreen;
+}
+footer{
+    text-align: center;
+}

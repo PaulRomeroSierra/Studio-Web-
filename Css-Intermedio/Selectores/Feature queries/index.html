@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="..//Flexbox/img/logo.png">
+    <meta name="author" content="Paul Romero Sierra">
+    <meta name="descryption" content="Esta pagina habla sobre features queries">
+    <meta name="keywords" content=" features, queries, flexbox, dinamico, responsive">
+    <link rel="stylesheet" href="style.css">
+    <title>Feature queries</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+    <aside>
+        <h1>Features queries</h1>
+        <h2>¿Cómo funcionan?</h2>
+        <p>
+            Las feature queries usan la regla <code>@supports</code>. Dentro de esta regla, defines una condición que el
+            navegador
+            evaluará. Si la característica está disponible, los estilos dentro de la consulta se aplican; si no, se
+            ignoran.
+        </p>
+        <code>@supports (propiedad: valor) {
+            /* Estilos que se aplican si la propiedad es compatible */ 
+        }</code>
+    </aside>
+    <aside>
+        <h2>Operadores en feature queries</h2>
+        <p>
+            Negación (not): Aplica estilos si una característica no es compatible. 
+            <code>
+                @supports not (display: grid) { 
+                    .aside {
+                        display: block;
+                    } 
+                }
+            </code>
+        </p>
+    </aside>
+    <dialog open>
+        <form method="dialog">
+            <button type="submit">X</button>
+        </form>
+    </dialog>
+    <aside>
+        <h2>
+            Múltiples condiciones (and, or):
+        </h2>
+        <p>
+            Puedes combinar condiciones para hacer pruebas más complejas. lo
+            <code>
+                @supports (display: flex) and (display: grid) { 
+                    .aside { 
+                        background-color: blue;
+                    } 
+                }  
+                @supports (display: grid) or (display: flex) { 
+                    .aside { 
+                        background-color: yellow; 
+                    } 
+                } 
+            </code>
+        </p>
+    </aside>
+</div>
+<footer>
+    Paul Romero
+</footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Etiqueta picture </h1>
+        <h2>Atributo media y srcset</h2>
+        <p>
+            La etiqueta <code>picture</code> se utiliza para proporcionar varias versiones de una imagen con diferentes
+            condiciones, como tamaños de pantalla o resoluciones, y el navegador elige automáticamente la más adecuada.
+            Esto es útil para diseño adaptable y optimización de recursos.
+            <br><br>
+            El elemento <code>source</code> se utiliza dentro de <code>picture</code> para definir las diferentes
+            fuentes de la imagen con atributos como srcset y media.
+        </p>
+    </div>
+    <div class="container">
+    <div class="container__img">
+        <picture>
+            <source srcset="dalto.webp" type="image/webp">
+            <source media="(max-width:400px)" srcset="..//Srcset_sizes/dalto-small.png">
+            <source media="(max-width:600px)" srcset="..//Srcset_sizes/dalto-medium.png">
+            <img src="..//Srcset_sizes/dalto.png" alt="">
+        </picture>
+    </div>
+</div>
+    <div>
+        <p>
+            Cómo funciona:
+            <br><br>
+            Si el ancho de la ventana es de al menos 400px, se usará imagen-pequeña.jpg.
+            <br><br>
+            Si el ancho de la ventana es menor a 600px, se usará imagen-mediana.jpg.
+            <br><br>
+            Si el navegador no soporta <code>picture</code>, se mostrará la imagen predeterminada en <code>img</code>.
+        </p>
+    </div>
+
+</body>
+</html>

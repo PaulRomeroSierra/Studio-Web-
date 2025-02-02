@@ -1,0 +1,34 @@
+/*Los pseudoelementos son "elementos virtuales" en CSS que te permiten aplicar estilos a una parte específica de un elemento HTML, sin necesidad de modificar el contenido del documento.*/
+
+
+/*¿Qué hace? Estiliza el texto de marcador (placeholder) dentro de un campo de entrada.
+*/
+input::placeholder{
+    color: aqua;
+}
+/*Selecciona la primer letra y la estiliza*/
+h1::first-letter{
+    color: green;
+    font-size: 4em;
+    letter-spacing: -16px;
+}
+/*Hace que cuando se haga la seleccion con el mouse tenga el color amarrillo*/
+h1::selection{
+    background-color: yellow;
+}
+/*Selecciona la primera linea del parrafo y la estiliza*/
+p::first-line{
+    color: brown;
+}
+/*Selecciona el marcador de los li y los estiliza*/
+li::marker{
+    color: blue;
+}
+/*Inserta contenido antes del contenido real de un elemento.*/
+p::before{
+    content: "👉";
+}
+/*Inserta contenido despues del contenido real de un elemento*/
+p::after{
+    content: "👈";
+}

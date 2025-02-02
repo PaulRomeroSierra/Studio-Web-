@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    background-color: #f00d;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.menu__nav{
+    background-color: #fff;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+.list__nav{
+    position: relative;
+    list-style: none;
+    margin:0;
+    padding: 0px;
+    top: -7px;
+}
+.item__nav1{
+    display: inline-block;
+    margin-top: 15px;
+    position: relative;
+}
+.item__nav2{
+    display: inline-block;
+    margin-top: 15px;
+    position: relative;
+}
+.item__link{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    transition-property: background;
+    transition-duration: 1s;
+}
+.item__link:hover{
+    background-color: #f445;
+    border-radius: 2px;
+}
+.header{
+    text-align:center;
+}
+
+.item--search{
+    width:200px;
+    padding: 3px;
+    padding-left:30px;
+    border-radius: 2px;
+    text-align:initial;
+    background-color: rgb(216, 216, 216);
+
+}
+
+.search__container{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    color: red;
+}
+.item--categories{
+    margin-left: 30px;
+}
+.categories__container{
+    position: absolute;
+    top:4px;
+    left: 8px;
+    color: red;
+}
+.concept__container{
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    color: red;
+}
+.item--concept{
+    margin-left: 40px;
+}
+.link--login{
+    text-align: center;
+    width: 50px;
+    padding: 10px;
+    border: 1px solid #0005;
+    border-radius: 4px;
+    transition-property: background, padding,color;
+    transition-duration: 0.5s;
+}
+.link--login:hover{
+    padding: 15px;
+    background-color: #f42;
+    color: white;
+}
+.link--sing{
+    text-align: center;
+    width: 60px;
+    background-color: #f00;
+    padding: 10px;
+    border: 2px solid #f00;
+    transition-property: color, border-radius, width;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+.link--sing:hover{
+    width: 50px;
+    color: #fff;
+    background-color: #f42;
+}
+
+.item__instructor{
+    margin-left: 11%;
+}
+h2{
+    margin-top:280px;
+}
+

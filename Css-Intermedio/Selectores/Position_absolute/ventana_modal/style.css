@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+dialog{
+    position: absolute;
+    background-color: #0009;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.modal__content{
+    background-color: white;
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.modal__close__button{
+    position: absolute;
+    color: red;
+    background-color: black;
+    top: 0;
+    right: 0;
+    padding: 4px 12px;
+    font-weight: bolder;
+    border: solid black;
+    border-top-right-radius:20px ;
+}
+/*Investigar la propiedad backdrop*/

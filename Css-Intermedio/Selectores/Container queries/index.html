@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="..//Flexbox/img/logo.png">
+    <meta name=" description" content="This is a website about flexbox">
+    <meta name=" keywords" content="flexbox, css, html">
+    <meta name=" author" content="Paul Romero Sierra">
+    <title>Container Queries</title>
+</head>
+<body> 
+    <div class="container">
+        <h2>Container Queries</h2>
+        <h3>¿Como funcionan?</h3>
+        <p>Definir el contenedor "observable"
+            Para usar Container Queries, primero debes indicar que un contenedor es "observable". Esto se hace con la propiedad container-type. Por ejemplo:</p>
+            <code>
+                .container {
+                    container-type: inline-size;
+                }
+            </code>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, rem molestiae ab, iste qui tempore sunt blanditiis et harum illum porro! Nihil accusantium nostrum fugit. Tempora quod perspiciatis natus vero.
+        </p>
+        <ul>
+            <li>Inline-size: Observa el ancho del contenedor.</li>
+            <li> Size: Observa tanto el ancho como el alto.</li>
+        </ul>
+        <h3>Escribir las reglas de consulta</h3>
+        <p>Usas @container para definir las condiciones bajo las cuales aplicar los estilos, basado en las dimensiones del contenedor. Ejemplo:</p>
+        <code>
+            @container (min-width: 400px) {
+                .child {
+                    font-size: 2rem;
+                    background-color: lightblue;
+                }
+            }
+            
+        </code>
+    </div>
+</body>
+</html>

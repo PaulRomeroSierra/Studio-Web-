@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Especificidad</title>
+</head>
+<body>
+    <h1 class="titulo" id="title" style="color: aquamarine;" >Especificidad</h1>
+    <!--Si el diseño se le da directamente en la etiqueta atributo tendrá la especificidad por encima de los diseños en linea-->
+    <style>
+        /*Cuando se le da directamente estilos en linea, tiene la especificidad más alta*/
+        #title {
+            color: chocolate;
+        }
+    </style>
+    <p>Especifidada es el orden de prioridad que van a tener los elementos.</p>
+</body>
+</html>

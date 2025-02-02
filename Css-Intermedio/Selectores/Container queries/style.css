@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+    container-type: inline-size;
+    container-name: main;
+}
+p,li,code{
+    font-size: 10px;
+}
+h3{
+    font-size: 12px;
+}
+h2{
+    font-size: 14px;
+}
+@container main (max-width:500px){
+    p,li,code,h3,h2{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    margin: 5px;
+    background-color: azure;
+    font-family: sans-serif;
+}
+
+/*  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  se le deben dar al la etiqueta que contiene el texto */
+.box {
+    width: 200px;
+    height: 40px;
+    background-color: antiquewhite;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

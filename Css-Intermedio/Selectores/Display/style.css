@@ -1,0 +1,62 @@
+/* inline - Hace que el elemento ocupe solo el espacio necesario para su contenido, sin saltar a una nueva línea.
+a{
+    display: inline;
+}*/
+/* Hace que el elemento ocupe todo el ancho disponible, empujando otros elementos hacia abajo.
+Ejemplo típico: <div>, <p>, <h1>.
+Uso: Para elementos que deben aparecer en una nueva línea.
+a{
+    display:block;
+} 
+    a{
+    background-color: aqua;
+}*/
+
+p{
+    background-color: black;
+    display: inline;
+    color: aliceblue;
+}
+/*Combina comportamientos de block e inline:
+No rompe la línea.
+Permite aplicar propiedades de ancho y alto.*/
+.nav{
+    background-color: blue;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+}
+.nav__list{
+    margin: 0;
+}
+.nav__link:hover{
+    background-color: blueviolet;
+}
+.item__list{
+    display:inline-block;
+}
+.nav__link{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    background-color:blue;
+
+}
+.list--button{
+    background-color:white ;
+    padding: 6px 12px;
+    border:2px solid white;
+    color: blue;
+    margin-left: 60px;
+    border-radius: 9px;
+    
+}
+.list--button:hover {
+    background-color: transparent;
+    color: white;
+}
+/*none (Ocultar):
+Hace que el elemento no sea renderizado en el documento (como si no existiera).
+Uso: Para ocultar elementos dinámicamente.
+*/

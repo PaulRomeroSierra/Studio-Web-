@@ -1,0 +1,53 @@
+:root{
+    --color-principal:#6C5CE7;
+    --color-secundario:#FFFFFF;
+    --color-fondo:#F1F1F1;
+}
+body{
+    margin:10px;
+}
+h1{
+    text-align: center;
+    font-family:"Roboto";
+    font-size: 35px;
+    padding: 10px;
+    background-color:var(--color-principal);
+    color: var(--color-fondo);
+    border-radius: 10px;
+    margin-top: 5px;
+    letter-spacing: 3px;
+    
+}
+.box{
+    padding: 20px;
+    width: 300px;
+    background: var(--color-fondo);
+    margin: auto;
+    border-bottom: 5px solid black;
+}
+
+.box--img{
+    width: 180px;
+    border-radius:25%;
+    padding: 0 60px;
+
+}
+.box--nombre{
+    text-align: center;
+    letter-spacing: 1.5px;
+    background-color: var(--color-principal);
+    color :var(--color-fondo);
+    font-family: "Roboto";
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 4px;
+
+}
+
+p{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+    font-family:"Roboto";
+    font-weight:600;
+}

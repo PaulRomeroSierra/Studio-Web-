@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Paul Martin Romero Sierra">
+    <meta name="keywords" content="Flexbox,dinamica,imagen,video,multimedia">
+    <meta name="description" content="Esta pagina habla sobre la multimedia flexible e dinamica">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="..//Flexbox/img/logo.png">
+    <title>Multimedia flexible</title>
+</head>
+<body>
+    <div class="img__container">
+    <img src="..//Flexbox/img/dalto.png" alt="Dalto" title="Dalto Posando">
+    </div>
+    <div>
+        <p>Ahora para hacer que un video sea responsivo existen dos formas</p>
+    </div>
+    <h3>Primer forma</h3>
+    <div>
+        <code>.container{</code>
+            <br>
+        <code> position: relative;</code>
+        <br>
+        <code>max-width: 100%;</code>
+        <br>
+        <code>padding-top: 56.25%;</code>
+        <br>
+        <code>height: 0;}</code>
+        <br><br>
+        <code>video{</code>
+            <br>
+        <code> position: absolute;</code>
+        <br>
+        <code>top:0;</code>
+        <br>
+        <code>left: 0;</code>
+        <br>
+        <code>max-width: 100%;}</code>
+        <h3>Segunda forma</h3>
+        <code>.container{</code>
+            <br>
+        <code>max-width:100%;</code>
+        <br>
+        <code>aspect-ratio:16/9;}</code>
+        </br><br>
+        <code>video{</code>
+            <br>
+        <code>max-width:100%;}</code>
+    </div>
+    <div class="container">
+        <video muted autoplay src="Online casino platform intro video.mp4"></video>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    background-color: beige;
+}
+/*static (Estático, valor predeterminado)
+Es el valor por defecto de todos los elementos.
+Los elementos se posicionan según el flujo normal de la página.
+No permite ajustar la posición usando propiedades como top, left, right o bottom*/
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: relative;
+}
+/*relative (Relativo)
+El elemento se posiciona en relación con su posición original en el flujo del documento.
+Puedes usar top, left, right, bottom para moverlo, pero su espacio original permanece reservado, la propiedad left y top tiene mas relevancia que button y rigth.
+*/
+
+/*Cuando tenemos las cajas posicionadas aparece otra propiedad llamada z-index que nos permite establecer la capa de la caja en la página*/
+.box--blue{
+    background-color: blue;
+    color: white;
+    left: 40px;
+    bottom:0px;
+    z-index: 1;
+}
+.box--red{
+    background-color: red;
+    color: white;
+    left: 100px; 
+    top: 140px;
+    z-index: 1;
+}
+.box--green{
+    background-color: green;
+    bottom:50px;
+    left: 20px;
+    z-index: -1;
+}

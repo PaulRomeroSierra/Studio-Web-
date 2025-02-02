@@ -1,0 +1,37 @@
+body{
+    background: gray;
+    margin: 5px;
+    color: #fff;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: antiquewhite;
+    border:2px solid black;
+    text-align: justify;
+    color: red;
+    margin-top: 15px;
+}
+h2{
+    margin: 0;
+    text-align: center;
+}
+.box--1{
+    background-color: #f2f2f2;
+    overflow: visible;
+    margin-bottom: 10rem;
+}
+.box--2{
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+/*Si queremos sacar el scroll de un eje solo le damos overflow-x o overflow-y, si queremos sacar el scroll de ambos eje le damos overflow: none, le damos overflow al eje que queremos que tenga scroll*/
+.box--3{
+    background-color: #f2f2f2;
+    overflow-y: scroll;
+}
+.box--4{
+    background-color: #f2f2f2;
+    overflow: auto;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias queries</title>
+</head>
+
+<body>
+    <h1>Media queries</h1>
+    <h2>Sintaxis</h2>
+    <p><code>@media -- </code>Es la regla que incia la media queries.<br><br>
+        <code>not|only</code>-- Operadores opcionales (not) excluye a los dispositivos que cumple con la consulta,
+        (only) se usa para evitar que navegadores antiguos que no soportan medias queries apliquen los estilos definidos
+        en la consulta.<br><br>
+        <code>mediatype -- </code>Indica el tipo de medio al que se dirije la consulta, si queremos imprimir algo usamos
+        <code>print</code>, si queremos medir el tamaño de la pantalla usamos <code>screen</code><br><br>
+        <code>and -- </code>, Es opcional lo podemos utilizar si queremos combinar varias expresiones en una consulta. <br><br>
+        <code>(expressions)-- </code> Evaluan caracteristicas especificas del dispositivo.
+        <br><br>
+        <code>@media not|only mediatype and (expressions){ <br>
+            CSS-Code; <br> }</code>
+    </p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+    margin: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+.Flexbox{
+    display: flex;
+    /*direction con sus valores ltr y rtl nos permite cambiar el orden de los elementos*/
+    /*Flex flow nos habla del flujo flexible nos permite cambiar el flujo de los elementos y el orden, nos permite abreviar la propiedad de flex-direction y flex-wrap,flex-flow: row wrap;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    justify-content: start;
+    height:200px;
+    /*Se alinea respecto a la linea de texto*/
+    align-items:center;
+    /*Cuando tenemos varias lineas y queremos alinearlas en el eje cruzado utilizamos la propiedad align-content: ;, con sus valores como los de aling items 
+    align-content: center;*/
+    
+    background-color: #ffe;
+    /*Para la separacion entre los elmentos*/
+} 
+.flex--item{
+    text-align: center;
+    background-color: red;
+    color: aliceblue;
+    direction: rtl;
+    flex-grow: 1; /*Aumenta el tamaño del elemento*/
+    flex-basis: 80px;
+}
+.flex--item:nth-child(2n){
+    background-color: blue;
+}
+/*Ordenamiento con flexbox din afectar el DOM con la propiedad Order
+.flex--item:nth-child(1){
+    order: 3;
+}
+.flex--item{
+    order: 2;
+}
+.flex--item:last-child{
+    order: 1;
+}
+*/
+/*Propiedades de los hijos
+flex-shrink:;
+flex-basis:;
+flex:grow;
+*/
+.item--10{
+    /*Solo funciona cuando el contenedor padre tiene aling-items*/
+    align-self: stretch;
+}

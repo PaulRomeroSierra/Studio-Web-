@@ -1,0 +1,15 @@
+/*Especifidada es el orden de prioridad que van a tener los elementos*/
+h1{
+    color: violet;
+}
+.titulo{
+    color: brown;
+}
+#title{
+    color: chartreuse;
+}
+/*En este caso la especificidad la tienen la seleccion por id y sino hay estilos tomará los valores por defectos definidos por el navegador*/
+h1{
+    color: darkgreen !important;
+    /*Cuando la propiedad tiene el valor !important, tiene el nivel mas alto de especifidad por encima de todos*/
+}

@@ -1,0 +1,84 @@
+:root{
+    --dark--green:#0D3D56;
+    --medium--green:#2E6D74;
+    --light--green:#73C6B6;
+    --pale--blue:#B3E5E0;
+    --white:#FFFFFF;
+}
+
+body{
+    margin:0 auto;
+    font-size: 16px;
+    font-family: sans-serif;
+    background: url(img/FondoFormulario.jpg);
+    text-align: center;
+}
+.box{
+    box-sizing:border-box;
+    max-width: 500px;
+    width: 90%;
+    height: 50%;
+    border-radius: 20px;
+    margin: 0;
+    background-color: var(--white);
+    box-shadow: 0 0 15px  0 #fff9;
+    margin:50px auto;
+    padding: 8px;
+}
+img{
+    width: 100%;
+    height: 30%;
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+}
+input, select{
+    width: 80%;
+    margin: 9px;
+    border-radius: 12px;
+    padding: 5px;
+    background-color: var(--medium--green);
+    color: var(--white);
+    border: 2px solid var(--medium--green);
+}
+input::placeholder{
+    color: var(--white);
+    font-style: italic;
+}
+input:hover{
+    background: linear-gradient(#0D3D56,#73C6B6);
+}
+.Titulo, label,fieldset{
+    text-transform: uppercase;
+    color: var(--medium--green);
+    font-weight: 600;
+    font-size: 0.9em;
+}
+.buttom{
+    width: 20%;
+    color: var(--white);
+    border-radius: 7px;
+}
+.buttom:hover{
+    background:linear-gradient(#0D3D56, #73C6B6);
+    border-radius: 20px;
+    padding: 8px;
+}
+textarea{
+    width: 50%;
+    resize: none;
+    margin: 25px;
+    border-radius: 20px;
+    padding: 12px;
+    border: 2px solid var(--medium--green);
+    color: var(--medium--green);
+    font-weight: bold;
+}
+fieldset{
+    border-radius: 9px;
+    margin: 9px 0px;
+
+}
+legend{
+    padding: 0px 8px;
+    text-align: left;
+}

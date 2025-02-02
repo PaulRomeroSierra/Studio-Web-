@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+p{
+    text-align: center;
+}
+.container{
+    display: flex;
+}
+.picture{
+    margin:0 auto;
+}
+.container__img{
+    margin:auto;
+}
+div{
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body,div{
+    box-sizing: border-box;
+}
+/*📌 Propiedades clave
+Propiedad	Función
+grid-row-start	Define en qué línea de la fila empieza el elemento.
+grid-row-end	Define en qué línea de la fila termina el elemento.
+grid-column-start	Define en qué línea de la columna empieza el elemento.
+grid-column-end	Define en qué línea de la columna termina el elemento.
+*/
+/*O también con span para indicar cuántas filas debe ocupar:*/
+.grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+    grid-template-rows:repeat(3,200px) ;
+    grid-auto-flow: dense;
+    gap:10px;
+    padding: 10px;
+    min-height: 100vh;
+}
+/*grid-auto-flow: dense; en CSS se usa para optimizar el llenado de las celdas vacías en un grid. Básicamente, intenta colocar elementos más pequeños en los espacios disponibles en lugar de seguir el orden de código.*/
+.grid-item{
+    background-color: #e4f;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+.grid-item:nth-child(2n){
+    background-color:#f00;
+}
+.grid-item:nth-child(6){
+    grid-column: span 2;
+    grid-column: span 3;
+}

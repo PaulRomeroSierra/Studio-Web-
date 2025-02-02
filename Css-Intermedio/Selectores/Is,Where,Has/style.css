@@ -1,0 +1,21 @@
+/*¿Qué hace? Permite agrupar múltiples selectores y aplica estilos si uno de ellos coincide. Reduce la repetición de código.*/
+:is(.elemento1,.elemento2,.elemento3){
+    color: blue;
+}
+/*¿Qué hace? Es similar a :is() pero no afecta la especificidad del selector, lo que la hace muy útil para escribir estilos sin complicar el cálculo de especificidad.*/
+:where(.elemento1,.elemento2,.elemento3){
+    color: red;
+}
+/*¿Qué hace? Selecciona un elemento si contiene un elemento hijo o descendiente que coincida con el selector especificado. Es como un "padre condicional".*/
+body:has(.elemento1){
+    background-color: aqua;
+}
+label:has(input:valid),input:valid{
+    color: green;
+}
+label:has(input:invalid),input:invalid{
+    color: rebeccapurple;
+}
+label{
+    font-weight:bolder ;
+}

@@ -1,0 +1,26 @@
+.Titulo{
+    font-family: Paul;
+    color: #2C3E50;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.Subtitulo{
+    font-family: Paul;
+    color: #27AE60;
+    font-size: 28px;
+    text-align: left;
+}
+.Lema{
+    color:black;
+    font-weight: bolder;
+    line-height: 1.8;
+    text-align: justify;
+}
+.Frase{
+    font-family: Paul;
+    color: #7F8C8D;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+} 
